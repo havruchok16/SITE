@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="Изображения\favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" type="text/css" />
+    <title> Кафедра технологии и дизайна изделий из древесины </title>
+    <script type="text/javascript" src="jquery-3_4_1.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    </head>
+
+<body>
+<!--область навигации-->
+    <nav>
+        <img id="logo" src="Изображения\Логотип ТДИД.png">
+        <a class="scrollto" href="#home"> Главная </a>
+        <a class="scrollto" href="#news"> Новости </a>
+        <a class="scrollto" href="#structure"> О кафедре </a>
+        <a class="scrollto" href="#partners"> Партнеры </a>
+        <a class="scrollto" href="#contacts"> Контакты </a>
+        <a href=""> Абитуриентам </a>
+        <a href="https://www.belstu.by/"> Сайт БГТУ </a>
+    </nav>
+<!--раздел НОВОСТИ-->
+<div id="home">
+    <div id="header">
+        <p id="belstu">
+            Белорусский Государственный Технологический Университет
+        </p>
+        <p id="name">
+            Кафедра технологии и дизайна <br> изделий из древесины 
+        </p>
+        <p id="information">
+            Мебельная промышленность - это отрасль, которая в последние годы все активнее влияет на условия нашей жизни,
+            способствуя улучшению и комфорту. Объектами профессиональной деятельности выпускников
+            специализации “Технология и дизайн мебели” являются дизайнерская, проектная
+             и конструкторская подготовка деревообрабатывающего производства.
+        </p>
+    </div>
+ 
+<!--контакты-->
+    <div id="contactsAndButton">
+        <div id="homeContacts">
+            <div>
+                <p><a href="https://www.instagram.com/tdid.official/"> <img src="Изображения\inst_logo.png"> tdid.official.com </a> </p>
+                <p><a href="https://vk.com/bstu_by"> <img src="Изображения\vk_logo.png"> vk.com/bstu_by </a> </p>
+            </div>
+            <div>
+                <p> <img src="Изображения\phone_logo.png"> (017)327-67-41 </p>
+                <p> <img src="Изображения\email_logo.png"> tdid@belstu.by </p>
+            </div>
+        </div>
+        
+        <a id="button" href=""> Абитуриентам </a>
+
+    </div>
+</div>
+
+<!--раздел НОВОСТИ-->
+<div id="news">
+        <p class="section_header">
+            Новости
+        </p>
+
+        <div class="slider">
+            <div class="slider_wrapper">
+                <div class="slider_item">
+                    <div>
+                        <img src="Фото ТДИД\Фото учебного процесса\photo_2020-07-09_16-47-36.jpg" alt="photo">
+                        <p class="dateOfEvent">18.11.2020</p>
+                        <p class="event">ДЕНЬ СТУДЕНТА</p>
+                        <a class="more" href="news.html">Открыть новость</a>
+                    </div>
+                </div>
+            <div class="slider_item">
+                <div>
+                    <img src="Фото ТДИД\Фото учебного процесса\photo_2020-07-09_16-47-28.jpg" alt="photo">
+                    <p class="dateOfEvent">21.10.2020</p>
+                    <p class="event">НАГРАЖДЕНИЕ</p>
+                    <a class="more" href="news.html">Открыть новость</a>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div>
+                    <img src="Фото ТДИД\Фото учебного процесса\photo_2020-07-09_16-47-40.jpg" alt="photo">
+                    <p class="dateOfEvent">15.10.2020</p>
+                    <p class="event">РЕЗУЛЬТАТЫ КОНКУРСА</p>
+                    <a class="more" href="news.html">Открыть новость</a>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div>
+                    <img src="Фото ТДИД\Фото учебного процесса\photo_2020-07-09_16-47-36.jpg" alt="photo">
+                    <p class="dateOfEvent">18.11.2020</p>
+                    <p class="event">ДЕНЬ СТУДЕНТА</p>
+                    <a class="more" href="news.html">Открыть новость</a>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div>
+                    <img src="Фото ТДИД\Фото учебного процесса\photo_2020-07-09_16-47-28.jpg" alt="photo">
+                    <p class="dateOfEvent">21.10.2020</p>
+                    <p class="event">НАГРАЖДЕНИЕ</p>
+                    <a class="more" href="news.html">Открыть новость</a>
+                </div>
+            </div>
+            <div class="slider_item">
+                <div>
+                    <img src="Фото ТДИД\Фото учебного процесса\photo_2020-07-09_16-47-40.jpg" alt="photo">
+                    <p class="dateOfEvent">15.10.2020</p>
+                    <p class="event">РЕЗУЛЬТАТЫ КОНКУРСА</p>
+                    <a class="more" href="news.html">Открыть новость</a>
+                </div>
+            </div>
+        </div>
+<!--стрелки для слайдера-->
+            <a class="slider_control slider_control_left" href="#" role="button"></a>
+            <a class="slider_control slider_control_right slider_control_show" href="#" role="button"></a>
+        </div>
+
+</div>
+
+<!--раздел О КАФЕДРЕ-->
+<div id="structure">
+        <p class="section_header">
+            О нас
+        </p>
+
+        <div>
+            <p id="textAboutTDID">
+                Персонал кафедры ТДИД на протяжении многих лет сотрудничает 
+                с деревообрабатывающими предприятиями и организациями в области 
+                совершенствования производственных процессов и технологических 
+                режимов, разработки дизайн-проектов, конструкторской документации 
+                изделий из древесины, а также постановки изделий на производство. 
+                Накопленный многолетний опыт и современное лабораторное оборудование 
+                позволяют решать сложнейшие производственные задачи в кратчайшие сроки. 
+                Высокая квалификация сотрудников — это гарантия абсолютного качества 
+                выполняемых работ.
+            </p>
+<!--оборудование-->
+            <div class="device">
+                <img id="device1" src="Фото ТДИД\Фото оборудования\Blum Minipress P.JPG">
+                <img id="device2" src="Фото ТДИД\Фото оборудования\Оборудование для VR HTC Vive.JPG">
+                <img id="device3" src="Фото ТДИД\Фото оборудования\Вайма.jpg">
+            </div>
+
+            <div class="device">
+                <img id="device4" src="Фото ТДИД\Фото оборудования\Микроскоп МБС-10.jpg">
+                <img id="device5" src="Фото ТДИД\Фото оборудования\IMG_0984.jpg">
+                <img id="device6" src="Фото ТДИД\Фото оборудования\Вискозиметр Fungilab Expert L.jpg">
+            </div>
+
+            <div class="device">
+                <img id="device7" src="Фото ТДИД\Фото оборудования\Кромкооблицовочный станок.jpg">
+                <img id="device8" src="Фото ТДИД\Фото оборудования\Пресс для облицовывания.jpg">
+                <img id="device9" src="Фото ТДИД\Фото оборудования\Ротационный абразиметр Табера.jpg">
+
+            </div>
+            <p class="section_header">
+                Что мы можем
+            </p>
+            <p class="work">
+                1.	Разработка конструкторской документации на изделия из древесины
+            </p>
+            <p class="work2">
+                2.	Разработка 3D моделей мебели и столярно-строительных изделий.
+            </p>
+            <p class="work">
+                3.	Разработка технологического процесса производства мебели и столярно-строительных изделий.
+            </p>
+            <p class="work2">
+                4.	Разработка мероприятий по модернизации и реконструкции мебельных цехов и цехов механической обработки древесины.
+            </p>
+            <p class="work">
+                5.	Разработка мероприятий по модернизации и реконструкции лесопильных цехов.
+            </p>
+            <p class="work2">
+                6.	Проведение лабораторных испытаний.
+            </p>
+            <p class="work">
+                7.	Разработка и совершенствование режимов сушки пиломатериалов в конвективных камерах периодического действия.
+            </p>
+            <p class="work2">
+                8.	Расчет производительности сушильных камер и объемов затрачиваемой тепловой и электроэнергии.
+            </p>
+            <p class="work">
+                9.	Разработка планировок мебельных, лесопильных цехов и цехов механической обработки древесины по СПДС.
+            </p>
+
+        </div>
+
+<!--преподаватели-->  
+        <p class="section_header">
+            Состав кафедры
+        </p>
+<div class="teachers">
+
+    <div class="three">
+            <div class="infoAboutTeacher">
+                <img src="Фото/Чуйков.jpg" alt="chuykov">
+                <p class="textAboutTeacher">
+                    ЧУЙКОВ <br> Алексей Сергеевич
+                </p>
+                <p class="textInfoAboutTeacher">
+                    заведующий кафедрой
+                    <br>
+                    кандидат технических наук 
+                    <br>
+                    ауд. 314-4
+                </p>
+            </div>
+
+            <div class="infoAboutTeacher">
+                <img src="Фото/Шетько.jpg" alt="shetjko">
+                <p class="textAboutTeacher">
+                    ШЕТЬКО <br> Сергей Васильевич
+                </p>
+                <p class="textInfoAboutTeacher">
+                    доцент
+                    <br>
+                    кандидат технических наук
+                    <br>
+                    ауд. 358-4
+                </p>
+            </div>
+
+            <div class="infoAboutTeacher">
+                <img src="Фото/Прохорчик.jpg" alt="prohorchik">
+                <p class="textAboutTeacher">
+                    ПРОХОРЧИК <br> Сергей Александрович
+                </p>
+                <p class="textInfoAboutTeacher">
+                    доцент
+                    <br>
+                    кандидат технических наук 
+                    <br>
+                    ауд. 301-2
+                </p>
+            </div>
+        </div>
+
+
+        <div class="three">
+            <div class="infoAboutTeacher">
+                <img src="Фото/Утгоф.jpg" alt="utgof">
+                <p class="textAboutTeacher">
+                    УТГОФ <br> Светлана Сергеевна
+                </p>
+                <p class="textInfoAboutTeacher">
+                    старший преподаватель
+                    <br>
+                    кандидат технических наук 
+                    <br>
+                    ауд. 403-4
+                </p>
+            </div>
+
+            <div class="infoAboutTeacher">
+                <img src="Фото/Чуйков.jpg" alt="kozlov">
+                <p class="textAboutTeacher">
+                    КОЗЛОВ <br>  Николай Гельевич
+                </p>
+                <p class="textInfoAboutTeacher">
+                    профессор
+                    <br>
+                    доктор химических наук 
+                    <br>
+                    ауд. 313-4
+                </p>
+            </div>
+
+            <div class="infoAboutTeacher">
+                <img src="Фото/Игнатович.jpg" alt="ignatovich">
+                <p class="textAboutTeacher">
+                    ИГНАТОВИЧ <br> Людмила Владимировна
+                </p>
+                <p class="textInfoAboutTeacher">
+                    доцент
+                    <br>
+                    кандидат технических наук 
+                    <br>
+                    ауд. 403-4
+                </p>
+            </div>
+
+        </div>
+
+        <div class="three">
+            <div class="infoAboutTeacher">
+                <img src="Фото/Корзенок.jpg" alt="korzenok">
+                <p class="textAboutTeacher">
+                    КОРЗЕНОК <br> Марина Михайловна
+                </p>
+                <p class="textInfoAboutTeacher">
+                    специалист 2 категории
+                    <br>
+                    ауд. 313-4
+                    <br>
+                    <br>
+                </p>
+            </div>
+
+            <div class="infoAboutTeacher">
+                <img src="Фото/Гайдук.jpg" alt="gajduk">
+                <p class="textAboutTeacher">
+                    ГАЙДУК <br> Сергей Сергеевич
+                </p>
+                <p class="textInfoAboutTeacher">
+                    доцент
+                    <br>
+                    кандидат технических наук 
+                    <br>
+                    ауд. 412-4
+                </p>
+            </div>
+
+            <div class="infoAboutTeacher">
+                <img src="Фото/Мухурова.jpg" alt="muhurova">
+                <p class="textAboutTeacher">
+                    МУХУРОВА <br> Екатерина Александровна
+                </p>
+                <p class="textInfoAboutTeacher">
+                    заведующий лабораторией
+                    <br>
+                    ауд. 415-4
+                    <br>
+                    <br>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="three">
+            <div class="infoAboutTeacher">
+                <img src="Фото/Жарко.jpg" alt="zharko">
+                <p class="textAboutTeacher">
+                    ЖАРКО <br> Виталий Владимирович
+                </p>
+                <p class="textInfoAboutTeacher">
+                    техник 2 категории.
+                    <br>
+                    ауд. 415-4
+                    <br>
+                    <br>
+                </p>
+            </div>
+
+            <div class="infoAboutTeacher">
+                <img src="Фото/Рудак.jpg" alt="rudak">
+                <p class="textAboutTeacher">
+                    РУДАК <br> Оксана Геннадьевна
+                </p>
+                <p class="textInfoAboutTeacher">
+                    старший преподаватель
+                    <br>
+                    ауд. 313-4
+                    <br>
+                    <br>
+                </p>
+            </div>
+            
+            <div class="infoAboutTeacher">
+                <img src="Фото/Трофимов.jpg" alt="trofimov">
+                <p class="textAboutTeacher">
+                    ТРОФИМОВ <br> Сергей Петрович
+                </p>
+                <p class="textInfoAboutTeacher">
+                    доцент
+                    <br>
+                    кандидат технических наук 
+                    <br>
+                    ауд. 412-4
+                </p>
+            </div>
+
+        </div>
+
+        <div class="three">
+            <div class="infoAboutTeacher">
+                <img src="Фото/Чуйков.jpg" alt="goncharova">
+                <p class="textAboutTeacher">
+                    ГОНЧАРОВА <br> Зоя Валентиновна
+                </p>
+                <p class="textInfoAboutTeacher">
+                    лаборант
+                    <br>
+                    ауд. 400-4
+                    <br>
+                    <br>
+                </p>
+            </div>
+            
+            <div class="infoAboutTeacher">
+                <img src="Фото/Полховский.jpg" alt="polhovsky">
+                <p class="textAboutTeacher">
+                    ПОЛХОВСКИЙ <br> Антон Викторович
+                </p>
+                <p class="textInfoAboutTeacher">
+                    преподаватель-стажёр
+                    <br>
+                    ауд. 412-4
+                    <br>
+                    <br>
+                </p>
+            </div>
+
+            <div class="infoAboutTeacher">
+                <img src="Фото/Ручкина.jpg" alt="ruchkina">
+                <p class="textAboutTeacher">
+                    РУЧКИНА <br> Елена Васильевна
+                </p>
+                <p class="textInfoAboutTeacher">
+                    ассистент
+                    <br>
+                    ауд. 403-4
+                    <br>
+                    <br>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--раздел ПАРТНЕРЫ-->
+<div id="partners">
+        <p class="section_header">
+            Наши партнеры
+        </p>
+        <div id="organizations">
+            <a href="https://www.molodechnomebel.by/">
+                <img src="Изображения\molodechno.png">
+                <p>ЗАО «Молодечномебель»</p>
+            </a>
+            <a href="https://antarion.by/">
+                <img src="Изображения\antarion.png">
+                <p>ООО «АНТАРИОН ГРУПП»</p>
+            </a>
+            <a href="http://rechdrev.by/">
+                <img src="Изображения\rechicadrev.png">
+                <p>ОАО «Речицадрев»</p>
+            </a>
+        </div>
+</div>
+
+<!--раздел КОНТАКТЫ-->
+<div id="contacts">
+        <p class="section_header">
+            Контакты
+        </p>
+        <div id="boxs">
+            <div id="yandexmap" ></div>
+            <div id="box">
+                <p><a href="https://www.instagram.com/tdid.official/"> tdid.official.com </a> </p>
+                <p><a href="https://vk.com/bstu_by">  vk.com/bstu_by </a> </p>
+                <p> (017)327-67-41 </p>
+                <p>  tdid@belstu.by </p>
+                <a id="button2" href=""> Абитуриентам </a>
+            </div>
+        </div>
+</div>
+
+<footer>
+    &#169; БГТУ, Минск 2020
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+
+

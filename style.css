@@ -1,0 +1,487 @@
+body{
+    background-color: white;
+    margin: auto;
+}
+/* навигация */
+nav{
+    background-color: rgba(255, 255, 255, 0);
+    overflow: visible; 
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    height: 8%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+nav:hover, nav:active{
+    background-color: #86654a;
+    transition: 1s;
+}
+nav a{
+    margin: 0% 1% 0% 1%;
+    font-family:Century Gothic;
+    font-size: 1.2vw;
+    color:rgb(255, 255, 255);
+    letter-spacing: 2px;
+    transition: 1s;
+    padding: 5px 10px 5px 10px;
+    border-radius: 40px;
+}
+nav a:hover{
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.26);
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.377);
+    padding: 5px 10px 5px 10px;
+    border-radius: 40px;
+}
+a{
+    text-decoration: none;
+}
+nav img{
+    width: 100px;
+    margin-right: 2%;
+}
+/* раздел ГЛАВНАЯ */
+#home{
+    background-image: url("Изображения/background3.png");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+    padding-right: 10%;
+}
+#belstu{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.2vw;
+    text-align: right;
+    letter-spacing: 2px;
+    margin: 0%;
+}
+#name{
+    font-family: Century Gothic;
+    font-size: 4.2vw;
+    font-weight: 600;
+    text-align: right;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 0px 0px 8px rgba(109, 103, 189, 0.603);
+    margin: 0%;
+}
+#information{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+    color: white;
+    text-align: right;
+    margin: 1% 0% 0% 30%;
+}
+/* подраздел с контактами */
+#contactsAndButton{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.842), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    margin-top: 5%;
+    padding: 1% 1% 8% 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#homeContacts{
+    margin-left: 10%;
+}
+#homeContacts div{
+    display: flex;
+    flex-direction: row;
+}
+#homeContacts div p,a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    color: #11102c;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.226);
+}
+#homeContacts img{
+    margin-right: 5%;
+    width: 25%;
+    opacity: 0.6;
+}
+/* кнопка перехода на сайт абитуриентов */
+#button{
+    margin-right: 20%;
+    width: 10%;
+    background-color: #191840;
+    border-radius: 30px;
+    padding: 1% 3% 1% 3%;
+    font-family: Century Gothic;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+    transition: 0.5s;
+}
+#button:active, #button:hover{
+    background-color: #11102c;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.384);
+    transition: 0.5s;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.226);
+}
+/* раздел НОВОСТИ */
+#news{
+    margin-top: 2%;
+    width: 100%;
+    height: 30%;
+    padding-top: 1%;
+}
+/* слайдер для новостей */
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: 0% 10% 2% 10%;
+}
+.slider_wrapper{
+    display: flex;
+    transition: 1s;
+}
+.slider_item{
+    height: 50%;
+    flex: 0 0 33.333333%;
+    width: 33.333333%;
+    overflow: hidden;
+}
+.slider_item>div{
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgba(78, 78, 78, 0.034);
+    transition: 1s;
+    height: 50%;
+}
+.slider_item>div img{
+    width: 100%;
+}
+.slider_control{
+    position: absolute;
+    top: 88%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: white;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    transition: 1s;
+    background: rgba(0, 0, 0, 0.5);
+}
+.slider_control_show{
+    display: flex;
+}
+.slider_control:hover,
+.slider_control:active{
+    color: white;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+    transition: 1s;
+}
+.slider_control_left{
+    left: 0;
+}
+.slider_control_right{
+    right: 0;
+}
+.slider_control::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+.slider_control_left::before{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.slider_control_right::before{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+/* свойства для фото и надписей в слайдере */
+.dateOfEvent{
+    text-align: right;
+    font-family:  Century Gothic;
+    font-size: 1vw;
+    padding-right: 2%;
+    margin: 1% 0% 5% 50%;
+    color: #11102c;
+    background: linear-gradient(to left, #11102c4b, rgba(255, 255, 255, 0));
+}
+.event{
+    text-align: center;
+    font-family:  Century Gothic;
+    font-size: 1.3vw;
+    color: #11102c;
+    margin: 0%;
+}
+.more{
+    background-color: #191840;
+    align-items: center;
+    margin: 5% 25% 8% 25%;
+    padding: 2% 3% 2% 3%;
+    font-family: Century Gothic;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.226);
+    transition: 0.5s;
+}
+.more:hover, .more:active{
+    background-color: #11102c;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.384);
+    transition: 0.5s;
+}
+/* раздел О КАФЕДРЕ */
+#structure{
+    padding-top: 1%;
+}
+.section_header{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #86654a, rgba(255, 255, 255, 0));
+    margin: 5% 20% 4% 20%;
+    padding: 0.5% 0% 0.5% 0%;
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 1.3vw;
+    color: white;
+    text-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.329);
+}
+/* краткий текст о кафедре*/
+#textAboutTDID{
+    padding: 0% 12% 2% 12%;
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+/* оборудование */
+.device{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.device img{
+    width: 20%;
+    margin: 1%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+}
+/* подраздел ЧТО МЫ МОЖЕМ */
+.work{
+    padding: 1% 5% 1% 5%;
+    margin: 0%;
+    background: linear-gradient(to right, rgba(243, 243, 243, 0),#a58d78c5,rgba(243, 243, 243, 0));
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    color: black;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.178);
+}
+.work2{
+    padding: 1% 5% 1% 5%;
+    margin: 0%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    color: black;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.178);
+}
+/* подраздел СОСТАВ КАФЕДРЫ */
+.three{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2% 8% 2% 8%;
+}
+/* преподаватели */
+.infoAboutTeacher{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoAboutTeacher img{
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
+}
+.textAboutTeacher{
+    margin-top: 2%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    color: #0f0d4d;
+}
+.textInfoAboutTeacher{
+    margin-top: 0%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: #745e4d;
+}
+
+/* раздел ПАРТНЕРЫ */
+#partners{
+    padding-top: 1%;
+}
+#organizations{
+    background-image: url("Изображения/background_partners3.png");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#organizations a{
+    margin: 12% 1% 15% 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 1.2vw;
+    color: black;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 2px  rgba(0, 0, 0, 0.329);
+    transition: 1s;
+}
+#organizations a:hover, a:active{
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.856);
+    transition: 1s;
+}
+#organizations img{
+    margin-bottom: 4%;
+    width: 70%;
+}
+/* раздел КОНТАКТЫ */
+#contacts{
+    padding-top: 1%;
+}
+#boxs{
+    background-image: url("Изображения/background_contacts3.png");
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 2% 0% 2% 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#box{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.315));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5% 10% 0.5% 10%;
+    margin-top: 3%;
+}
+#box img{
+    width: 25%;
+    opacity: 0.5;
+}
+#box p, #box a{
+    font-family: Century Gothic;
+    font-size: 1.3vw;
+    text-align: center;
+    align-items: center;
+    color: black;
+    transition: 0.5s;
+}
+#box p:hover, p:active{
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+    transition: 0.5s;
+}
+#box a:hover, a:active{
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.459);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1600px) {
+    #yandexmap{ 
+        width: 850px;
+        height: 500px;
+     }
+  }
+@media screen and (max-width: 1280px) {
+    #yandexmap{ 
+        width: 680px;
+        height: 360px;
+     }
+  }
+@media screen and (max-width: 1024px) {
+    #yandexmap{ 
+        width: 540px;
+        height: 280px;
+     }
+  }
+@media screen and (max-width: 800px) {
+    #yandexmap{ 
+        width: 420px;
+        height: 220px;
+     }
+  }
+@media screen and (max-width: 640px) {
+    #yandexmap{ 
+        width: 340px;
+        height: 180px;
+     }
+  }
+#yandexmap{
+    align-self: center;
+    border: solid 5px rgba(48, 36, 20, 0.356);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.589);
+}
+#button2{ 
+    width: 10%;
+    background-color: #191840;
+    border-radius: 30px;
+    padding: 1% 3% 1% 3%;
+    font-family: Century Gothic !important;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+    color: white !important; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+    transition: 0.5s;
+}
+#button2:active, #button2:hover{
+    background-color: #11102c;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.384);
+    transition: 0.5s;
+}
+footer{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 1vw;
+    color: black;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.404);
+}
